@@ -1,0 +1,55 @@
+.navbar {
+  width: 100%;
+  background: #006eff;
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 91, 187, 0.4);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #dfeeff;
+}
+
+.logout {
+  padding: 8px 16px;
+  border: none;
+  background: #004fbd;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout:hover {
+  background: #003d94;
+}
+
+.dark-toggle {
+  padding: 8px 16px;
+  border: none;
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 10px;
+  border: 1px solid var(--border-color);
+}
+

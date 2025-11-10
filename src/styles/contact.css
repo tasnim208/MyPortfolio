@@ -1,0 +1,95 @@
+
+.contact-container {
+  max-width: 600px;
+  margin: 70px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 91, 187, 0.2);
+  border: 1px solid #c7dbff;
+  animation: fadeIn 0.7s ease;
+}
+
+.contact-container h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #006eff;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #004fbd;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 14px 45px 14px 14px;
+  border-radius: 12px;
+  background: #f4f8ff;
+  border: 2px solid #c7dbff;
+  font-size: 16px;
+  transition: 0.3s ease;
+  outline: none;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+  border-color: #006eff;
+  background: #eaf2ff;
+  box-shadow: 0 0 10px rgba(0, 91, 187, 0.25);
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #006eff;
+  font-size: 18px;
+}
+
+.input-box textarea {
+  min-height: 140px;
+  resize: none;
+  padding-right: 50px;
+}
+
+.contact-container button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #006eff, #004fbd);
+  color: white;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  box-shadow: 0 6px 18px rgba(0, 91, 187, 0.4);
+  transition: 0.3s ease;
+}
+
+.contact-container button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 91, 187, 0.55);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+

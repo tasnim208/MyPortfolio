@@ -1,0 +1,43 @@
+/* 🎨 Thème clair (par défaut) */
+body.light {
+  --bg-color: #f8f9fa;
+  --text-color: #222;
+  --card-bg: #ffffff;
+  --primary: #006eff;
+  --secondary: #004fbd;
+  --input-bg: #f4f8ff;
+  --border-color: #c7dbff;
+  --shadow: rgba(0, 91, 187, 0.2);
+}
+
+/* 🌙 Thème sombre */
+body.dark {
+  --bg-color: #1c1e23;
+  --text-color: #e4e6eb;
+  --card-bg: #2a2d34;
+  --primary: #4a90e2;
+  --secondary: #006eff;
+  --input-bg: #333842;
+  --border-color: #555b65;
+  --shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* Application globale */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.4s, color 0.4s;
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+button {
+  transition: background 0.3s, transform 0.2s;
+}

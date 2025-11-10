@@ -1,0 +1,157 @@
+
+.project-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 20px;
+  background-color: #f9fafb;
+  color: #222;
+  animation: fadeIn 0.6s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-image-container {
+  flex: 1 1 300px;
+  max-width: 450px;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.project-info {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.project-info h1 {
+  font-size: 2.2rem;
+  color: #0078d7;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.tech-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+
+.tech-list li {
+  display: inline-block;
+  background-color: #e7f3ff;
+  color: #0078d7;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin: 4px 4px 4px 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.tech-list li:hover {
+  background-color: #0078d7;
+  color: #fff;
+}
+
+/* Liens et boutons */
+.project-links {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0078d7;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+.btn.secondary {
+  background-color: #444;
+}
+
+.btn.secondary:hover {
+  background-color: #222;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 30px;
+  color: #0078d7;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #005fa3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-detail-container {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+
+  .project-info,
+  .project-image-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  .tech-list li {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
