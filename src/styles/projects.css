@@ -1,21 +1,21 @@
-
 .projects-container {
   padding: 60px 20px;
-  background: #f8f9fa;
-  color: #222;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
   text-align: center;
+  min-height: calc(100vh - 140px);
 }
 
 .projects-container h1 {
   font-size: 2.3rem;
-  color: #0078d7;
+  color: var(--accent-primary);
   margin-bottom: 10px;
 }
 
 .projects-intro {
   max-width: 700px;
   margin: 0 auto 20px auto;
-  color: #555;
+  color: var(--text-secondary);
   font-size: 1.1rem;
 }
 
@@ -24,15 +24,21 @@
   max-width: 450px;
   padding: 10px 15px;
   margin: 15px 0 40px;
-  border: 2px solid #0078d7;
+  border: 2px solid var(--accent-primary);
   border-radius: 10px;
   outline: none;
   font-size: 1rem;
   transition: all 0.3s ease;
+  background: var(--input-bg);
+  color: var(--text-primary);
+}
+
+.search-bar::placeholder {
+  color: var(--text-secondary);
 }
 
 .search-bar:focus {
-  box-shadow: 0 0 8px rgba(0, 120, 215, 0.5);
+  box-shadow: 0 0 8px var(--shadow);
 }
 
 .projects-grid {
@@ -43,18 +49,19 @@
 }
 
 .project-card {
-  background: white;
+  background: var(--card-bg);
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   max-width: 350px;
+  border: 1px solid var(--border-color);
 }
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px var(--shadow);
 }
 
 .project-thumbnail {
@@ -69,20 +76,20 @@
 
 .project-content h3 {
   font-size: 1.4rem;
-  color: #0078d7;
+  color: var(--accent-primary);
   margin-bottom: 8px;
 }
 
 .project-content p {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-secondary);
   min-height: 50px;
   margin-bottom: 15px;
 }
 
-.btn-details {
+.btn {
   display: inline-block;
-  background: #0078d7;
+  background: var(--accent-primary);
   color: white;
   padding: 8px 14px;
   border-radius: 8px;
@@ -91,13 +98,13 @@
   transition: background 0.3s;
 }
 
-.btn-details:hover {
-  background: #005fa3;
+.btn:hover {
+  background: var(--accent-secondary);
 }
 
 .no-results {
   grid-column: 1 / -1;
   font-size: 1.1rem;
-  color: #777;
+  color: var(--text-secondary);
   margin-top: 20px;
 }

@@ -1,43 +1,40 @@
-/* 🎨 Thème clair (par défaut) */
-body.light {
-  --bg-color: #f8f9fa;
-  --text-color: #222;
-  --card-bg: #ffffff;
-  --primary: #006eff;
-  --secondary: #004fbd;
-  --input-bg: #f4f8ff;
+/* Variables CSS pour les thèmes */
+:root {
+  /* Light Theme */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #222222;
+  --text-secondary: #555555;
+  --accent-primary: #006eff;
+  --accent-secondary: #004fbd;
   --border-color: #c7dbff;
+  --card-bg: #ffffff;
   --shadow: rgba(0, 91, 187, 0.2);
+  --input-bg: #f4f8ff;
 }
 
-/* 🌙 Thème sombre */
-body.dark {
-  --bg-color: #1c1e23;
-  --text-color: #e4e6eb;
-  --card-bg: #2a2d34;
-  --primary: #4a90e2;
-  --secondary: #006eff;
-  --input-bg: #333842;
-  --border-color: #555b65;
-  --shadow: rgba(0, 0, 0, 0.5);
+[data-theme="dark"] {
+  /* Dark Theme */
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --accent-primary: #4d94ff;
+  --accent-secondary: #1a75ff;
+  --border-color: #404040;
+  --card-bg: #2d2d2d;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --input-bg: #3d3d3d;
 }
 
-/* Application globale */
+/* Application des variables */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  transition: background 0.4s, color 0.4s;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-a {
-  color: var(--primary);
-}
-
-a:hover {
-  color: var(--secondary);
-}
-
-button {
-  transition: background 0.3s, transform 0.2s;
+.app-wrapper {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
 }

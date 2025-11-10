@@ -1,12 +1,12 @@
 .navbar {
   width: 100%;
-  background: #006eff;
+  background: var(--accent-primary);
   padding: 16px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
-  box-shadow: 0 4px 12px rgba(0, 91, 187, 0.4);
+  box-shadow: 0 4px 12px var(--shadow);
 }
 
 .logo {
@@ -30,11 +30,12 @@
 .logout {
   padding: 8px 16px;
   border: none;
-  background: #004fbd;
+  background: var(--accent-secondary);
   color: white;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
+  margin-right: 10px;
 }
 
 .logout:hover {
@@ -44,12 +45,13 @@
 .dark-toggle {
   padding: 8px 16px;
   border: none;
-  background: var(--card-bg);
-  color: var(--text-color);
+  background: var(--accent-secondary);
+  color: white;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
-  margin-left: 10px;
-  border: 1px solid var(--border-color);
 }
 
+.dark-toggle:hover {
+  background: #003d94;
+}

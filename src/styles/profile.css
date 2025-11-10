@@ -1,12 +1,11 @@
-
 .profile-container {
   max-width: 900px;
   margin: 40px auto 80px;
   padding: 30px;
-  background: #ffffff;
+  background: var(--card-bg);
   border-radius: 18px;
-  box-shadow: 0 8px 25px rgba(0, 91, 187, 0.2);
-  border: 1px solid #d4e4ff;
+  box-shadow: 0 8px 25px var(--shadow);
+  border: 1px solid var(--border-color);
 }
 
 .profile-header {
@@ -20,30 +19,31 @@
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  border: 5px solid #006eff;
-  box-shadow: 0 4px 18px rgba(0, 91, 187, 0.3);
+  border: 5px solid var(--accent-primary);
+  box-shadow: 0 4px 18px var(--shadow);
 }
 
 .profile-header h1 {
-  color: #006eff;
+  color: var(--accent-primary);
   margin-bottom: 8px;
 }
 
 .profile-header h3 {
-  color: #244b74;
+  color: var(--text-secondary);
   margin-bottom: 8px;
 }
 
 .profile-desc {
-  color: #44648c;
+  color: var(--text-secondary);
   max-width: 500px;
 }
+
 .profile-section {
   margin-top: 35px;
 }
 
 .profile-section h2 {
-  color: #004fbd;
+  color: var(--accent-primary);
   margin-bottom: 12px;
   font-size: 24px;
 }
@@ -54,17 +54,17 @@
 }
 
 .profile-list li {
-  background: #f4f8ff;
+  background: var(--input-bg);
   padding: 12px 16px;
   margin-bottom: 10px;
   border-radius: 10px;
-  border-left: 5px solid #006eff;
-  color: #244b74;
-  box-shadow: 0 2px 8px rgba(0, 91, 187, 0.15);
+  border-left: 5px solid var(--accent-primary);
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px var(--shadow);
 }
 
 .profile-list a {
-  color: #006eff;
+  color: var(--accent-primary);
   text-decoration: none;
   font-weight: bold;
 }

@@ -1,50 +1,58 @@
 .login-container {
-  width: 360px;
-  margin: 80px auto;
-  background: #ffffff;
-  padding: 32px;
-  border-radius: 14px;
-  box-shadow: 0 0 20px rgba(0, 91, 187, 0.18);
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  background: var(--card-bg);
+  border-radius: 18px;
+  box-shadow: 0 8px 25px var(--shadow);
+  border: 1px solid var(--border-color);
   text-align: center;
-  border-top: 6px solid #006eff;
-  animation: fadeIn 0.5s ease;
 }
 
 .login-container h2 {
-  margin-bottom: 20px;
-  color: #006eff;
-  font-weight: bold;
+  color: var(--accent-primary);
+  margin-bottom: 30px;
+  font-size: 28px;
 }
 
 .login-container input {
   width: 100%;
   padding: 14px;
-  margin-bottom: 16px;
-  border-radius: 10px;
-  border: 2px solid #c7dbff;
-  background: #f0f6ff;
-  transition: 0.25s;
+  margin: 12px 0;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  background: var(--input-bg);
+  color: var(--text-primary);
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
 }
 
 .login-container input:focus {
-  border-color: #006eff;
-  background: #eaf2ff;
-  box-shadow: 0 0 8px rgba(0,115,230,0.4);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 10px var(--shadow);
+}
+
+.login-container input::placeholder {
+  color: var(--text-secondary);
 }
 
 .login-container button {
   width: 100%;
   padding: 14px;
-  background: #006eff;
-  border: none;
-  border-radius: 10px;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
   color: white;
-  font-size: 17px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
+  margin-top: 15px;
+  box-shadow: 0 6px 18px var(--shadow);
+  transition: 0.3s ease;
 }
 
 .login-container button:hover {
-  background: #004fbd;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px var(--shadow);
 }

@@ -1,6 +1,5 @@
 import "../styles/profile.css";
 
-
 export default function Profile() {
   return (
     <div className="profile-container">
@@ -23,11 +22,25 @@ export default function Profile() {
           <li><strong>Adresse :</strong> Ras Jebel, Bizerte 7070</li>
           <li><strong>Téléphone :</strong> (+216) 51 650 940</li>
           <li><strong>Email :</strong> elbichtasnim@gmail.com</li>
-          <li><strong>LinkedIn :</strong> 
-            <a href="www.linkedin.com/in/tasnim-elbich-5778082b0" target="_blank"> Voir profil</a>
+          <li>
+            <strong>LinkedIn :</strong> 
+            <a 
+              href="https://www.linkedin.com/in/tasnim-elbich-5778082b0" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              {" "}Voir profil
+            </a>
           </li>
-          <li><strong>GitHub :</strong> 
-            <a href="https://github.com/tasnim208" target="_blank"> github.com/TasnimElBich</a>
+          <li>
+            <strong>GitHub :</strong> 
+            <a 
+              href="https://github.com/tasnim208" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              {" "}github.com/TasnimElBich
+            </a>
           </li>
         </ul>
       </div>
@@ -55,7 +68,7 @@ export default function Profile() {
         <ul className="profile-list">
           <li>
             <strong>Stagiaire Dev Mobile – Smart For Green</strong> (Juil–Août 2025)  
-            <br />Développement d’une application mobile de covoiturage.
+            <br />Développement d'une application mobile de covoiturage.
           </li>
           <li>
             <strong>Secrétaire – Talaba</strong> (Sep 2023 – Avr 2024)  

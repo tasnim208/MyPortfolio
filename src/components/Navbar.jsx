@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 
-export default function Navbar({ setIsLoggedIn }) {
+export default function Navbar({ setIsLoggedIn, darkMode, setDarkMode }) {
   return (
     <nav className="navbar">
       <h2 className="logo">MyPortfolio</h2>
@@ -13,6 +13,13 @@ export default function Navbar({ setIsLoggedIn }) {
 
         <button className="logout" onClick={() => setIsLoggedIn(false)}>
           Déconnexion
+        </button>
+
+        <button
+          className="dark-toggle"
+          onClick={() => setDarkMode(!darkMode)}
+        >
+          {darkMode ? "☀️ Light" : "🌙 Dark"}
         </button>
       </div>
     </nav>

@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
+import "./styles/styles.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -12,11 +12,22 @@ import Contact from "./pages/Contact";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem('darkMode') === 'true';
+  });
+
+  useEffect(() => {
+    const theme = darkMode ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('darkMode', darkMode.toString());
+  }, [darkMode]);
 
   return (
     <div className="app-wrapper">
       <BrowserRouter>
-        {isLoggedIn && <Navbar setIsLoggedIn={setIsLoggedIn} />}
+        {isLoggedIn && (
+          <Navbar setIsLoggedIn={setIsLoggedIn} darkMode={darkMode} setDarkMode={setDarkMode} />
+        )}
 
         <main className="content">
           <Routes>
